@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Les Petits Plats</title>
+    <script src="https://kit.fontawesome.com/a18b407708.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Manrope:wght@200..800&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="flex justify-center items-center relative h-screen w-full overflow-hidden">
+        <img src="/assets/lampos-aritonang-24gR_9lCdes-unsplash-1.webp" alt="background pokebowl"
+            class="absolute h-full w-full object-cover z-0">
+
+        <img src="/assets/Logo.webp" alt="Logo Les Petits Plats" class="absolute top-1 left-1 p-4">
+        <div class="header-container z-10 w-full flex flex-col items-center ">
+            <span class="hook font-normal text-[44px] leading-[66px] self-center text-custom-yellow font-anton">
+                CHERCHEZ
+                PARMI
+                PLUS DE 1500 RECETTES
+            </span>
+            <span class="hook font-normal text-[44px] leading-[66px] self-center text-custom-yellow font-anton mb-5">DU
+                QUOTIDIEN, SIMPLES ET
+                DÉLICIEUSES</span>
+            <div class="container-research w-[60%] flex items-center relative">
+                <input id="search-input" type="text" placeholder="Rechercher une recette, un ingrédient, ..."
+                    class="bg-white rounded-md border-0 p-4 w-full">
+                <i class="fa-solid fa-xmark hidden"></i>
+                <i class="fa-solid fa-magnifying-glass absolute right-1 bg-custom-gray p-4 rounded-md text-white"></i>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="filters-container flex justify-between">
+            <div class="filters flex flex-row">
+                <div class="dropdown-ingredients m-5">
+                    <span>Ingrédients</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                    <div class="content"></div>
+                </div>
+                <div class="dropdown-devices m-5">
+                    <span>Appareils</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                    <div class="content"></div>
+                </div>
+                <div class="dropdown-utensils m-5">
+                    <span>Ustensiles</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                    <div class="content"></div>
+                </div>
+            </div>
+            <span id="recipes-number">11</span>
+        </section>
+
+        <section class="selection">
+
+        </section>
+
+        <section class="recipes-container">
+
+        </section>
+
+    </main>
+    <script src="./scripts/index.js" type="module"></script>
+</body>
+
+</html>
